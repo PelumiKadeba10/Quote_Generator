@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const url = "https://api.api-ninjas.com/v1/quotes";
-const key = "ASp9hh12Ya3hEsSsrLpK2w==8HqM4fTNzMb1ORBt"
+const url = import.meta.env.VITE_API_URI;
+const key = import.meta.env.VITE_API_KEY;
 
 function Data(){
     const [quotes, setQuote] = useState([]);
